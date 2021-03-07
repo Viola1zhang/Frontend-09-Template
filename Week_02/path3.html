@@ -8,7 +8,6 @@
     <style>
         .cell{
             display:inline-block;
-            line-height: 1px;
             width:6px;
             height: 6px;
             background-color: grey;
@@ -19,6 +18,7 @@
 
         #container{
             width:701px;
+            line-height: 1px;
             
         }
     </style>
@@ -64,11 +64,11 @@
         document.addEventListener("mouseup", () =>mousedown=false);
         document.addEventListener("contextmenu",e => e.preventDefault);
 
-    function sleep(t){
-        return new Promise((resolve,reject) => {
-            setTimeout(resolve, t);
-        })
-      }
+        function sleep(t){
+          return new Promise((resolve,reject) => {
+             setTimeout(resolve, t);
+         })
+        }
 
     async function path(map,start,end){
             var queue = [start];
@@ -90,7 +90,7 @@
                 //console.log(queue.length);
                 container.children[y * 100 + x].style.backgroundColor ="lightgreen";
                 map[y * 100 + x] = 2;
-                queue.push([x, y])  
+                queue.push([x, y]);  
                 
             }
             
