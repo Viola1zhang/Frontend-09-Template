@@ -1,0 +1,14 @@
+<script>
+    //通过proxy将object 做一层包裹，可以让对象设置起来像普通对象，又能够被监听
+let object = {
+    a: 1,
+    b: 2
+}
+//创建一个proxy,里面的config 对象包含了对po这个对象去做的钩子
+let po = new Proxy(object, {
+    set(obj, prop, val){
+        console.log(obj,prop,val);
+    }
+
+})
+</script>
