@@ -107,8 +107,6 @@
 - "false" == false
 - a[0] =1;
 
-![](C:\Yu Zhang\Frontend homework\Frontend09\Frontend-09-Template\Week_07\typeconversion.png)
-
 #### Unboxing
 
 - ToPremitive
